@@ -54,7 +54,7 @@ public class RemoteISPNClient {
 	      System.out.println("Updated key -> "+e.getKey() +" version -> "+e.getVersion()+"  data -> "+cache.get(e.getKey()));
 	      System.out.println("Adding same element again"+e.getKey() +" with version "+e.getVersion());
 	      cache.replaceWithVersion(""+e.getKey(), "NEW VALUE ---", e.getVersion());
-	      Thread.sleep(5000);
+	      Thread.sleep(3000);
 	      System.out.println("Adding same element again"+e.getKey() +" with new version "+1011);
 	     //cache.replaceWithVersion(""+e.getKey(), "NEW VALUE ---",1011);
 	      cache.put(""+e.getKey(), cache.get(e.getKey())+"2222");

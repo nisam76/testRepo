@@ -63,14 +63,14 @@ public class RemoteISPNServer {
 				System.out.println(dateFormat.format(cal.getTime()));
 				cache.put("K"+i, "V"+i);
 				//cache.put("K"+i, "V"+i);
-				//if(i%5 == 0){
-				//	cache.put("K"+i, "V1"+i);
+				if(i%5 == 0){
+					cache.put("K"+i, "V1"+i);
 					
 					//Thread.sleep(2000);
 					///cache.remove("K"+i);
 					//cache.put("K"+i, "V1"+i);
 					
-				//}
+				}
 				//i++;
 				Thread.sleep(10000);
 				cache.put("K"+i, "V"+i);
