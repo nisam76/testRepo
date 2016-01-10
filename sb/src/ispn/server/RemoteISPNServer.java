@@ -58,7 +58,7 @@ public class RemoteISPNServer {
 		//while(true){
 			
 			try {
-				Thread.sleep(30000);
+				Thread.sleep(31000);
 				Calendar cal = Calendar.getInstance();
 				System.out.println(dateFormat.format(cal.getTime()));
 				cache.put("K"+i, "V"+i);
