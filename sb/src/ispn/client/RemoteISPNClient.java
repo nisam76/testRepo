@@ -43,7 +43,7 @@ public class RemoteISPNClient {
 	   public void handleCreatedEvent(ClientCacheEntryCreatedEvent<Object> e) {
 		Calendar cal = Calendar.getInstance();
 	      System.out.println(dateFormat.format(cal.getTime()));
-	      System.out.println(" Add -> "+e.getKey()+ "   "+cache.get(e.getKey()));
+	      System.out.println(" Add -> "+e.getKey()+ "   : "+cache.get(e.getKey()));
 	      
 	   }
 
