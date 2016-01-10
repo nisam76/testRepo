@@ -15,6 +15,7 @@ import org.infinispan.client.hotrod.configuration.ConfigurationBuilder;
 import org.infinispan.client.hotrod.event.ClientCacheEntryCreatedEvent;
 import org.infinispan.client.hotrod.event.ClientCacheEntryModifiedEvent;
 import org.infinispan.client.hotrod.event.ClientCacheEntryRemovedEvent;
+
 @ClientListener
 public class RemoteISPNClient {
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
@@ -42,7 +43,7 @@ public class RemoteISPNClient {
 	   public void handleCreatedEvent(ClientCacheEntryCreatedEvent<Object> e) {
 		Calendar cal = Calendar.getInstance();
 	      System.out.println(dateFormat.format(cal.getTime()));
-	      System.out.println("Add "+e.getKey()+ "   "+cache.get(e.getKey()));
+	      System.out.println(" Add "+e.getKey()+ "   "+cache.get(e.getKey()));
 	      
 	   }
 
